@@ -47,10 +47,10 @@ export class ApicallPage implements OnInit {
 
   oneditClick() {
     const data = {
-      title: 'mytitle',
+      title: 'dfkdglmdgafdh',
       author: 'my author',
     };
-    this.http.put('http://localhost:3000/post/1', data).subscribe(
+    this.http.put('http://localhost:3000/post/5', data).subscribe(
       (res: any) => {
         console.log('succesfull' + res, data);
       },
@@ -61,7 +61,7 @@ export class ApicallPage implements OnInit {
   }
 
   ondeleteClick() {
-    this.http.delete('http://localhost:3000/post/11').subscribe((res: any) => {
+    this.http.delete('http://localhost:3000/post/13').subscribe((res: any) => {
       console.log('delted succesfully' + res);
     });
   }
